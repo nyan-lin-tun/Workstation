@@ -1,3 +1,4 @@
+// Currently used types
 export type DeviceCategory = 'infrastructure' | 'peripheral';
 
 export type ConnectionType = 'USB-A' | 'USB-C' | 'USB 3.0' | 'HDMI' | 'DisplayPort' | 'Thunderbolt' | 'Ethernet' | 'Audio' | 'Power' | 'Bluetooth' | 'USB';

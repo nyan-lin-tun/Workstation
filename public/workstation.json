@@ -1,0 +1,495 @@
+{
+  "devices": [
+    {
+      "id": "personal-laptop",
+      "description": "Personal laptop for development",
+      "title": "Laptop",
+      "label": "Personal Laptop",
+      "category": "HOST",
+      "position": {
+        "x": 50.0,
+        "y": 310.0
+      },
+      "size": {
+        "width": 200.0,
+        "height": 70.0
+      },
+      "ports": [
+        {
+          "id": "personal-laptop-usb",
+          "name": "USB-C",
+          "direction": "OUTPUT",
+          "position": {
+            "side": "RIGHT",
+            "position": 40.0
+          }
+        }
+      ],
+      "specifications": [],
+      "url": ""
+    },
+    {
+      "id": "baseus-hub",
+      "description": "USB Hub for connecting peripherals",
+      "title": "Baseus Lite Series",
+      "label": "Baseus Hub",
+      "category": "HUB",
+      "position": {
+        "x": 50.0,
+        "y": 180.0
+      },
+      "size": {
+        "width": 180.0,
+        "height": 120.0
+      },
+      "ports": [
+        {
+          "id": "baseus-hub-in",
+          "name": "USB-C",
+          "direction": "INPUT",
+          "position": {
+            "side": "LEFT",
+            "position": 40.0
+          }
+        },
+        {
+          "id": "baseus-hub-out-1",
+          "name": "USB 3.0",
+          "direction": "OUTPUT",
+          "position": {
+            "side": "RIGHT",
+            "position": 40.0
+          }
+        },
+        {
+          "id": "baseus-hub-out-2",
+          "name": "USB 3.0",
+          "direction": "OUTPUT",
+          "position": {
+            "side": "RIGHT",
+            "position": 80.0
+          }
+        }
+      ],
+      "specifications": [],
+      "url": ""
+    },
+    {
+      "id": "logitech-brio",
+      "description": "4K Webcam",
+      "title": "Logitech Brio",
+      "label": "Webcam",
+      "category": "DEVICE",
+      "position": {
+        "x": 400.0,
+        "y": 50.0
+      },
+      "size": {
+        "width": 180.0,
+        "height": 80.0
+      },
+      "ports": [
+        {
+          "id": "logitech-brio-usb",
+          "name": "USB 3.0",
+          "direction": "INPUT",
+          "position": {
+            "side": "LEFT",
+            "position": 40.0
+          }
+        }
+      ],
+      "specifications": [],
+      "url": ""
+    },
+    {
+      "id": "doio-16-keys",
+      "description": "16-key numeric keypad",
+      "title": "DOIO 16 Keys",
+      "label": "Numeric Keypad",
+      "category": "DEVICE",
+      "position": {
+        "x": 50.0,
+        "y": 50.0
+      },
+      "size": {
+        "width": 180.0,
+        "height": 80.0
+      },
+      "ports": [
+        {
+          "id": "doio-16-keys-usb",
+          "name": "USB 3.0",
+          "direction": "INPUT",
+          "position": {
+            "side": "LEFT",
+            "position": 40.0
+          }
+        }
+      ],
+      "specifications": [],
+      "url": ""
+    },
+    {
+      "id": "samsung-monitor",
+      "description": "Samsung ViewFinity S65UC",
+      "title": "Samsung ViewFinity",
+      "label": "Samsung Monitor",
+      "category": "HUB",
+      "position": {
+        "x": 400.0,
+        "y": 310.0
+      },
+      "size": {
+        "width": 200.0,
+        "height": 260.0
+      },
+      "ports": [
+        {
+          "id": "samsung-monitor-usb",
+          "name": "USB",
+          "direction": "OUTPUT",
+          "position": {
+            "side": "RIGHT",
+            "position": 40.0
+          }
+        },
+        {
+          "id": "samsung-monitor-usb-2",
+          "name": "USB",
+          "direction": "OUTPUT",
+          "position": {
+            "side": "RIGHT",
+            "position": 80.0
+          }
+        },
+        {
+          "id": "samsung-monitor-hdmi",
+          "name": "DisplayPort",
+          "direction": "INPUT",
+          "position": {
+            "side": "LEFT",
+            "position": 40.0
+          }
+        }
+      ],
+      "specifications": [],
+      "url": ""
+    },
+    {
+      "id": "ergodox-ez",
+      "description": "Ergonomic mechanical keyboard",
+      "title": "Ergodox EZ",
+      "label": "Keyboard",
+      "category": "DEVICE",
+      "position": {
+        "x": 320.0,
+        "y": 570.0
+      },
+      "size": {
+        "width": 200.0,
+        "height": 80.0
+      },
+      "ports": [
+        {
+          "id": "ergodox-ez-usb",
+          "name": "USB",
+          "direction": "INPUT",
+          "position": {
+            "side": "LEFT",
+            "position": 40.0
+          }
+        }
+      ],
+      "specifications": [],
+      "url": ""
+    },
+    {
+      "id": "yeti-mic",
+      "description": "Yeti X WOW Edition Microphone",
+      "title": "Yeti X",
+      "label": "Microphone",
+      "category": "DEVICE",
+      "position": {
+        "x": 480.0,
+        "y": 570.0
+      },
+      "size": {
+        "width": 200.0,
+        "height": 80.0
+      },
+      "ports": [
+        {
+          "id": "yeti-mic-usb",
+          "name": "USB",
+          "direction": "INPUT",
+          "position": {
+            "side": "LEFT",
+            "position": 40.0
+          }
+        }
+      ],
+      "specifications": [],
+      "url": ""
+    },
+    {
+      "id": "nintendo-switch",
+      "description": "Nintendo Switch Gaming Console",
+      "title": "Nintendo Switch",
+      "label": "Nintendo Switch",
+      "category": "HOST",
+      "position": {
+        "x": 700.0,
+        "y": 50.0
+      },
+      "size": {
+        "width": 200.0,
+        "height": 70.0
+      },
+      "ports": [
+        {
+          "id": "nintendo-switch-hdmi",
+          "name": "HDMI",
+          "direction": "OUTPUT",
+          "position": {
+            "side": "RIGHT",
+            "position": 40.0
+          }
+        }
+      ],
+      "specifications": [],
+      "url": ""
+    },
+    {
+      "id": "chromecast",
+      "description": "Google Chromecast 4K",
+      "title": "Chromecast",
+      "label": "Chromecast",
+      "category": "HOST",
+      "position": {
+        "x": 850.0,
+        "y": 50.0
+      },
+      "size": {
+        "width": 200.0,
+        "height": 70.0
+      },
+      "ports": [
+        {
+          "id": "chromecast-hdmi",
+          "name": "HDMI",
+          "direction": "OUTPUT",
+          "position": {
+            "side": "RIGHT",
+            "position": 40.0
+          }
+        }
+      ],
+      "specifications": [],
+      "url": ""
+    },
+    {
+      "id": "ugreen-switcher",
+      "description": "UGREEN HDMI Switcher 3-in-1",
+      "title": "UGREEN Switcher",
+      "label": "HDMI Switcher",
+      "category": "HUB",
+      "position": {
+        "x": 775.0,
+        "y": 180.0
+      },
+      "size": {
+        "width": 160.0,
+        "height": 140.0
+      },
+      "ports": [
+        {
+          "id": "ugreen-switcher-in-1",
+          "name": "HDMI",
+          "direction": "INPUT",
+          "position": {
+            "side": "LEFT",
+            "position": 40.0
+          }
+        },
+        {
+          "id": "ugreen-switcher-in-2",
+          "name": "HDMI",
+          "direction": "INPUT",
+          "position": {
+            "side": "LEFT",
+            "position": 80.0
+          }
+        },
+        {
+          "id": "ugreen-switcher-in-3",
+          "name": "HDMI",
+          "direction": "INPUT",
+          "position": {
+            "side": "LEFT",
+            "position": 120.0
+          }
+        },
+        {
+          "id": "ugreen-switcher-out",
+          "name": "HDMI",
+          "direction": "OUTPUT",
+          "position": {
+            "side": "RIGHT",
+            "position": 100.0
+          }
+        }
+      ],
+      "specifications": [],
+      "url": ""
+    },
+    {
+      "id": "aoc-monitor",
+      "description": "AOC Q27E3UMF 27 inch Monitor",
+      "title": "AOC Q27E3UMF",
+      "label": "AOC Monitor",
+      "category": "DEVICE",
+      "position": {
+        "x": 775.0,
+        "y": 310.0
+      },
+      "size": {
+        "width": 200.0,
+        "height": 200.0
+      },
+      "ports": [
+        {
+          "id": "aoc-monitor-hdmi",
+          "name": "HDMI",
+          "direction": "INPUT",
+          "position": {
+            "side": "TOP",
+            "position": 40.0
+          }
+        }
+      ],
+      "specifications": [],
+      "url": ""
+    },
+    {
+      "id": "magic-trackpad",
+      "description": "Magic Trackpad 2",
+      "title": "Magic Trackpad",
+      "label": "Trackpad",
+      "category": "DEVICE",
+      "position": {
+        "x": 50.0,
+        "y": 570.0
+      },
+      "size": {
+        "width": 200.0,
+        "height": 80.0
+      },
+      "ports": [],
+      "specifications": [],
+      "url": ""
+    }
+  ],
+  "connections": [
+    {
+      "id": "conn-1",
+      "sourceDeviceId": "baseus-hub",
+      "sourcePortId": "baseus-hub-out-1",
+      "targetDeviceId": "logitech-brio",
+      "targetPortId": "logitech-brio-usb",
+      "routingPoints": []
+    },
+    {
+      "id": "conn-2",
+      "sourceDeviceId": "baseus-hub",
+      "sourcePortId": "baseus-hub-out-2",
+      "targetDeviceId": "doio-16-keys",
+      "targetPortId": "doio-16-keys-usb",
+      "routingPoints": []
+    },
+    {
+      "id": "conn-3",
+      "sourceDeviceId": "samsung-monitor",
+      "sourcePortId": "samsung-monitor-usb",
+      "targetDeviceId": "ergodox-ez",
+      "targetPortId": "ergodox-ez-usb",
+      "routingPoints": []
+    },
+    {
+      "id": "conn-4",
+      "sourceDeviceId": "samsung-monitor",
+      "sourcePortId": "samsung-monitor-usb-2",
+      "targetDeviceId": "yeti-mic",
+      "targetPortId": "yeti-mic-usb",
+      "routingPoints": []
+    },
+    {
+      "id": "conn-5",
+      "sourceDeviceId": "ugreen-switcher",
+      "sourcePortId": "ugreen-switcher-out",
+      "targetDeviceId": "aoc-monitor",
+      "targetPortId": "aoc-monitor-hdmi",
+      "routingPoints": []
+    },
+    {
+      "id": "conn-6",
+      "sourceDeviceId": "nintendo-switch",
+      "sourcePortId": "nintendo-switch-hdmi",
+      "targetDeviceId": "ugreen-switcher",
+      "targetPortId": "ugreen-switcher-in-1",
+      "routingPoints": []
+    },
+    {
+      "id": "conn-7",
+      "sourceDeviceId": "chromecast",
+      "sourcePortId": "chromecast-hdmi",
+      "targetDeviceId": "ugreen-switcher",
+      "targetPortId": "ugreen-switcher-in-2",
+      "routingPoints": []
+    },
+    {
+      "id": "conn-8",
+      "sourceDeviceId": "personal-laptop",
+      "sourcePortId": "personal-laptop-usb",
+      "targetDeviceId": "baseus-hub",
+      "targetPortId": "baseus-hub-in",
+      "routingPoints": []
+    },
+    {
+      "id": "conn-9",
+      "sourceDeviceId": "personal-laptop",
+      "sourcePortId": "personal-laptop-usb",
+      "targetDeviceId": "samsung-monitor",
+      "targetPortId": "samsung-monitor-hdmi",
+      "routingPoints": []
+    },
+    {
+      "id": "conn-10",
+      "sourceDeviceId": "personal-laptop",
+      "sourcePortId": "personal-laptop-usb",
+      "targetDeviceId": "ugreen-switcher",
+      "targetPortId": "ugreen-switcher-in-3",
+      "routingPoints": []
+    }
+  ],
+  "metadata": {
+    "title": "My Workstation",
+    "date": "Jan 29, 2026",
+    "canvasSize": {
+      "width": 1200.0,
+      "height": 800.0
+    },
+    "theme": {
+      "isDark": true
+    },
+    "viewport": {
+      "minZoom": 0.5,
+      "maxZoom": 3.5
+    },
+    "grid": {
+      "enabled": true,
+      "size": 20.0,
+      "majorLineInterval": 5
+    }
+  }
+}

@@ -16,8 +16,7 @@ import ReactFlow, {
 import 'reactflow/dist/style.css'
 import DeviceNode from './DeviceNode'
 import ConnectionEdge from './ConnectionEdge'
-import { diagramData } from '../data/devices'
-import { Device } from '../types'
+import { Device, DiagramData } from '../types'
 
 const nodeTypes = {
   device: DeviceNode,
@@ -42,7 +41,7 @@ const clearFlowStorage = () => {
 }
 
 // Manual layout based on reference screenshot positions
-const createNodes = (theme: 'light' | 'dark', data: any): Node<Device>[] => {
+const createNodes = (theme: 'light' | 'dark', data: DiagramData): Node<Device>[] => {
   const nodes: Node<Device>[] = []
 
   // 3-COLUMN LAYOUT from your reference
@@ -66,13 +65,13 @@ const createNodes = (theme: 'light' | 'dark', data: any): Node<Device>[] => {
     'aoc-monitor': { x: 775, y: 310 },         // ← SAME ROW as laptop & Samsung (centered)
   }
 
-  data.devices.forEach((device) => {
+  data.devices.forEach((device: Device) => {
     const pos = positions[device.id] || { x: 100, y: 100 }
     nodes.push({
       id: device.id,
       type: 'device',
       position: pos,
-      data: { ...device, theme },
+      data: device,
     })
   })
 
@@ -123,11 +122,11 @@ const getBestHandle = (
 }
 
 // Create edges from device connections with smart handle selection
-const createEdges = (theme: 'light' | 'dark', data: any): Edge[] => {
+const createEdges = (theme: 'light' | 'dark', data: DiagramData): Edge[] => {
   const edges: Edge[] = []
   const nodes = createNodes(theme, data)
 
-  data.devices.forEach((device) => {
+  data.devices.forEach((device: Device) => {
     device.connections.forEach((conn) => {
       let sourceHandle: string | null = null
       let targetHandle: string | null = null
@@ -164,7 +163,7 @@ const createEdges = (theme: 'light' | 'dark', data: any): Edge[] => {
         label: conn.type,
         animated: false,
         style: { stroke: '#a855f7', strokeWidth: 2.5 },
-        data: { label: conn.type, theme },
+        data: { label: conn.type },
       })
     })
   })

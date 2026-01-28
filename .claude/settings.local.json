@@ -16,7 +16,11 @@
       "mcp__zread__get_repo_structure",
       "mcp__web-search-prime__webSearchPrime",
       "Skill(glm-plan-usage:usage-query)",
-      "Skill(glm-plan-usage:usage-query-skill)"
+      "Skill(glm-plan-usage:usage-query-skill)",
+      "mcp__zread__read_file",
+      "mcp__zai-mcp-server__diagnose_error_screenshot",
+      "Bash(bun run build:*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }
