@@ -20,7 +20,8 @@
       "mcp__zread__read_file",
       "mcp__zai-mcp-server__diagnose_error_screenshot",
       "Bash(bun run build:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(npx vite build:*)"
     ]
   }
 }

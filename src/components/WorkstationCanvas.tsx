@@ -41,7 +41,7 @@ const clearFlowStorage = () => {
 }
 
 // Manual layout based on reference screenshot positions
-const createNodes = (theme: 'light' | 'dark', data: DiagramData): Node<Device>[] => {
+const createNodes = (data: DiagramData): Node<Device>[] => {
   const nodes: Node<Device>[] = []
 
   // 3-COLUMN LAYOUT from your reference
@@ -122,9 +122,9 @@ const getBestHandle = (
 }
 
 // Create edges from device connections with smart handle selection
-const createEdges = (theme: 'light' | 'dark', data: DiagramData): Edge[] => {
+const createEdges = (data: DiagramData): Edge[] => {
   const edges: Edge[] = []
-  const nodes = createNodes(theme, data)
+  const nodes = createNodes(data)
 
   data.devices.forEach((device: Device) => {
     device.connections.forEach((conn) => {
@@ -179,15 +179,15 @@ interface WorkstationCanvasProps {
 
 export default function WorkstationCanvas({ theme, showGrid, diagramData }: WorkstationCanvasProps) {
   const [renderKey, setRenderKey] = useState(0)
-  const [nodes, setNodes] = useState<Node<Device>[]>(createNodes(theme, diagramData))
-  const [edges, setEdges] = useState<Edge[]>(createEdges(theme, diagramData))
+  const [nodes, setNodes] = useState<Node<Device>[]>(createNodes(diagramData))
+  const [edges, setEdges] = useState<Edge[]>(createEdges(diagramData))
 
   // Force re-render when theme changes
   useEffect(() => {
     setRenderKey(prev => prev + 1)
     clearFlowStorage()
-    const initialNodes = createNodes(theme, diagramData)
-    const initialEdges = createEdges(theme, diagramData)
+    const initialNodes = createNodes(diagramData)
+    const initialEdges = createEdges(diagramData)
     setNodes(initialNodes)
     setEdges(initialEdges)
   }, [theme, diagramData])
