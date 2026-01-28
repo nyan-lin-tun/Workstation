@@ -43,3 +43,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          destination-dir: ./dist
+          # Force GitHub Pages to use /workstation/ path
+          # This is controlled by the 'base' path in vite.config.ts
